@@ -1,5 +1,5 @@
 getwd()
-View(data)
+View(Iris_Dataset)
 
 #5.4b
 
