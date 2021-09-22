@@ -6,5 +6,7 @@ install.packages('lsa')
 
 stats::dist(x, method = "manhattan")
 
-cosine(x)
+stats::dist(x, method="cosine")
+print(cos)
+
 
