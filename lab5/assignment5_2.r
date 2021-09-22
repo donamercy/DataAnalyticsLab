@@ -7,8 +7,10 @@ Q <- 20:29/sum(20:29)
 #5.2c
 print(P)
 print(Q)
-print(rbind(P,Q))
+X<-(rbind(P,Q))
+print (X)
 
-#5.3d
-library(philentropy)
-distance(x, method = "euclidean")
+#5.2d
+euc<-dist(X, method = "euclidean")
+print(euc)
+
