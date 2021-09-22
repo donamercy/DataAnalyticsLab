@@ -1,11 +1,11 @@
 #5.1a
 df = mtcars
-df[1:5,]
+df[1:6,]
 
 #5.1b
-pairs(~disp + wt + mpg + hp, data = mtcars)
+plot(mtcars$wt, mtcars$mpg,  xlab="Car Weight",
+     ylab="Miles Per Gallon", main="Weight vs. Milage", pch=19)
 
 #5.1c
-a <- mtcars[,c("mpg","wt")]
-model <- lm(mpg~wt, data = a)
-print(model)
+correlation<-cor(mtcars$mpg, mtcars$wt)
+print(sprintf("Correlation between mpg and wt variables: %f", correlation))
